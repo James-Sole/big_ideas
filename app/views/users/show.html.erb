@@ -1,0 +1,10 @@
+<% content_for  :left_column do %>
+<h1>User</h1>
+<a href="<%= logout_path %>" data-method="delete">Logout</a>
+<a href="<%= bright_ideas_path %>">Bright Ideas</a>
+<div class="card" style="width: 18rem;">
+  <p><%= @user.name %></p>
+  <p><%= @user.alias %></p>
+  <p><%= @user.email %></p>
+</div>
+<% end %>
